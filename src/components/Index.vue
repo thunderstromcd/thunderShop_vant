@@ -9,6 +9,7 @@
 
     <!-- 内容区域 -->
     <router-view></router-view>
+
     <!-- 底部 -->
     <van-tabbar v-model="active">
       <van-tabbar-item  v-for="(item, index) in icon" :key="index"  @click="toUrl(item.url)">
@@ -58,8 +59,9 @@ export default {
     this.getLeftArrow()
   },
   methods: {
+    // 是否显示左侧文案
     getLeftArrow () {
-      if (this.$route.path !== '/welcome') {
+      if (this.$route.path !== '/home') {
         this.showLeft = true
       } else {
         this.showLeft = false
@@ -67,7 +69,7 @@ export default {
     },
     // 返回
     onClickLeft () {
-      this.$route.go(-1)
+      this.$router.go(-1)
     },
     // 底部跳转
     toUrl (url) {
@@ -81,5 +83,13 @@ export default {
 <style lang="less" scoped>
 /deep/.van-tabbar-item--active {
   color: #ff930a;
+}
+
+.van-nav-bar{
+  background-color: #fa7d09;
+}
+
+/deep/.van-icon-arrow-left::before{
+  color: #4a3f35;
 }
 </style>
