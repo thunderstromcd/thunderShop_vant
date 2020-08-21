@@ -8,7 +8,10 @@
     />
 
     <!-- 内容区域 -->
-    <router-view></router-view>
+    <keep-alive>
+      <router-view v-if="$route.meta.keepAlive"></router-view>
+    </keep-alive>
+    <router-view v-if="!$route.meta || !$route.meta.keepAlive"></router-view>
 
     <!-- 底部 -->
     <van-tabbar v-model="active">
