@@ -1,5 +1,8 @@
 <template>
   <div>
+
+    <van-loading color="#1989fa" />
+
     <!-- 下拉刷新 -->
     <van-pull-refresh
     v-model="isLoading"
@@ -73,13 +76,16 @@ export default {
     },
     // 跳转到对应详情页
     toDetail (id) {
-      this.$router.push('/newsdetail')
+      this.$router.push('/newsdetail/' + id)
     }
   }
 }
 </script>
 
 <style lang="less" scoped>
+.van-loading{
+  margin: 0 auto;
+}
 /deep/.van-card{
     border-radius: 10px;
     background-color: #ebecf1;

@@ -19,7 +19,7 @@ const routes = [
       { path: '/member', component: MemberCenter },
       { path: '/search', component: Search },
       { path: '/newslist', component: NewsList, meta: { keepAlive: true } },
-      { path: '/newsdetail', component: NewsDetail, meta: { keepAlive: false } }
+      { path: '/newsdetail/:id', component: NewsDetail, meta: { keepAlive: false } }
     ]
   }
 ]
