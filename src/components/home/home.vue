@@ -30,7 +30,7 @@ export default {
       ],
       iconImage: [
         { image: '/images/menu1.png', title: '新闻头条', url: '/newslist' },
-        { image: '/images/menu2.png', title: '图片分享', url: '/share' },
+        { image: '/images/menu2.png', title: '图片分享', url: '/piclist' },
         { image: '/images/menu3.png', title: '商品购买', url: '/shop' },
         { image: '/images/menu4.png', title: '留言反馈', url: '/feedback' },
         { image: '/images/menu5.png', title: '视频专区', url: '/video' },

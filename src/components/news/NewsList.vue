@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <van-loading color="#1989fa" />
+    <!-- <van-loading color="#1989fa" v-show="loading"/> -->
 
     <!-- 下拉刷新 -->
     <van-pull-refresh

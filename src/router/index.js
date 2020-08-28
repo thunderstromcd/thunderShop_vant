@@ -7,6 +7,8 @@ import MemberCenter from '../components/member/MemberCenter.vue'
 import Search from '../components/search/Search.vue'
 import NewsList from '../components/news/NewsList.vue'
 import NewsDetail from '../components/news/NewsDetail.vue'
+import PicList from '../components/share/PicList.vue'
+import PicDetail from '../components/share/PicDetail.vue'
 Vue.use(VueRouter)
 const routes = [
   {
@@ -19,7 +21,9 @@ const routes = [
       { path: '/member', component: MemberCenter },
       { path: '/search', component: Search },
       { path: '/newslist', component: NewsList, meta: { keepAlive: true } },
-      { path: '/newsdetail/:id', component: NewsDetail, meta: { keepAlive: false } }
+      { path: '/newsdetail/:id', component: NewsDetail, meta: { keepAlive: false } },
+      { path: '/piclist', component: PicList, meta: { keepAlive: true } },
+      { path: '/picdetail/:id', component: PicDetail }
     ]
   }
 ]
