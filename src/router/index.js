@@ -9,6 +9,9 @@ import NewsList from '../components/news/NewsList.vue'
 import NewsDetail from '../components/news/NewsDetail.vue'
 import PicList from '../components/share/PicList.vue'
 import PicDetail from '../components/share/PicDetail.vue'
+
+import Regist from '../components/login/Regist.vue'
+import Login from '../components/login/Login.vue'
 Vue.use(VueRouter)
 const routes = [
   {
@@ -25,7 +28,11 @@ const routes = [
       { path: '/piclist', component: PicList, meta: { keepAlive: true } },
       { path: '/picdetail/:id', component: PicDetail }
     ]
-  }
+  },
+  // 注册
+  { path: '/regist', component: Regist },
+  // 登录
+  { path: '/login', component: Login }
 ]
 
 const router = new VueRouter({

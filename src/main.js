@@ -9,6 +9,9 @@ import Vant from 'vant'
 import 'vant/lib/index.css'
 import '../public/icon/iconfont.css'
 import moment from 'moment'
+
+// 引入mock数据
+import './components/mock/index'
 // axios请求默认地址
 axios.defaults.baseURL = 'http://api.cms.liulongbin.top'
 Vue.use(Vant)
